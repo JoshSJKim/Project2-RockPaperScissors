@@ -22,23 +22,24 @@ function playRound(playerSelection, computerSelection) {
   const loseMsg = "You lose.";
   const drawMsg = "It's a draw.";
   if (playerSelection == computerSelection) {
-    return drawMsg;
+    console.log(drawMsg);
   } else if (playerSelection == 'Rock' && computerSelection == 'Scissors') {
-    return winMsg;
+    console.log(winMsg);
   } else if (playerSelection == 'Rock' && computerSelection == 'Paper') {
-    return loseMsg;
+    console.log(loseMsg);
   } else if (playerSelection == 'Paper' && computerSelection == 'Scissors') {
-    return loseMsg;
+    console.log(loseMsg);
   } else if (playerSelection == 'Paper' && computerSelection == 'Rock') {
-    return winMsg;
+    console.log(winMsg);
   } else if (playerSelection == 'Scissors' && computerSelection == 'Rock') {
-    return loseMsg;
+    console.log(loseMsg);
   } else if (playerSelection == 'Scissors' && computerSelection == 'Paper') {
-    return winMsg;
+    console.log(winMsg);
   }
 }
 
 let playerSelection = prompt("Rock, paper, or scissors?", "");
 let computerSelection = getComputerChoice();
+console.log(computerSelection);
 
 playRound(playerSelection, computerSelection);
