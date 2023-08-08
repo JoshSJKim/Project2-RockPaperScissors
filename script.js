@@ -8,7 +8,6 @@
 function getComputerChoice() {
   const choices = ['Rock', 'Paper', 'Scissors'];
   let randomIndex = Math.floor(Math.random() * choices.length);
-  console.log(randomIndex);
   return choices[randomIndex];
 }
 
@@ -17,3 +16,29 @@ function getComputerChoice() {
 //  computerSelection will be acquired by calling 'getComputerChoice()';
 //  compare the playerSelection input and the random computerSelection
 //  return a result of the round based on the comparison
+
+function playRound(playerSelection, computerSelection) {
+  const winMsg = "You win!";
+  const loseMsg = "You lose.";
+  const drawMsg = "It's a draw.";
+  if (playerSelection == computerSelection) {
+    return drawMsg;
+  } else if (playerSelection == 'Rock' && computerSelection == 'Scissors') {
+    return winMsg;
+  } else if (playerSelection == 'Rock' && computerSelection == 'Paper') {
+    return loseMsg;
+  } else if (playerSelection == 'Paper' && computerSelection == 'Scissors') {
+    return loseMsg;
+  } else if (playerSelection == 'Paper' && computerSelection == 'Rock') {
+    return winMsg;
+  } else if (playerSelection == 'Scissors' && computerSelection == 'Rock') {
+    return loseMsg;
+  } else if (playerSelection == 'Scissors' && computerSelection == 'Paper') {
+    return winMsg;
+  }
+}
+
+let playerSelection = prompt("Rock, paper, or scissors?", "");
+let computerSelection = getComputerChoice();
+
+playRound(playerSelection, computerSelection);
