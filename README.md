@@ -20,3 +20,6 @@ if (playerSelection !== 'rock' && playerSelection !== 'paper' && playerSelection
 - Since the `gameCount++` portion of the code hasn't been run yet, it 'resets' the current iteration in a manner of speaking.
 
 Visit the 'Rock Paper Scissors' project page<a href="https://joshsjkim.github.io/Project2-RockPaperScissors/" target="_blank"> here</a>.
+
+- So it turns out, I am not able to figure out how to get the link to open in a new tab in markdown files.
+- It is good to know and remember that I could use simple `HTML` syntax inside of markdown files.
