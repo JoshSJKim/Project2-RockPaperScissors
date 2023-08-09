@@ -50,6 +50,12 @@ let gameCount = 0;
 while (gameCount < 5) {
 
 let playerSelection = prompt("Rock, paper, or scissors?", "");
+
+if (playerSelection !== 'rock' && playerSelection !== 'paper' && playerSelection !== 'scissors') {
+  alert("Input is invalid. Please check your spelling.");
+  continue;
+}
+
 let computerSelection = getComputerChoice();
 console.log("Your choice: " + playerSelection);
 console.log("Computer's choice: " + computerSelection);
