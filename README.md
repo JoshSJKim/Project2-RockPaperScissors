@@ -19,4 +19,4 @@ if (playerSelection !== 'rock' && playerSelection !== 'paper' && playerSelection
 
 - Since the `gameCount++` portion of the code hasn't been run yet, it 'resets' the current iteration in a manner of speaking.
 
-[Visit the 'Rock Paper Scissors' project page here](https://joshsjkim.github.io/Project2-RockPaperScissors/)<-- _blank -->
+[Visit the 'Rock Paper Scissors' project page here](https://joshsjkim.github.io/Project2-RockPaperScissors/)<!-- _blank -->
