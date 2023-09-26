@@ -1,3 +1,24 @@
+const bodyElement = document.body;
+
+const rockButton = document.createElement('button');
+rockButton.textContent = 'Rock';
+
+const rockDiv = document.createElement('div');
+rockDiv.appendChild(rockButton);
+bodyElement.appendChild(rockDiv);
+
+const paperButton = document.createElement('button');
+paperButton.textContent = 'Paper';
+const paperDiv = document.createElement('div');
+paperDiv.appendChild(paperButton);
+bodyElement.appendChild(paperDiv);
+
+const scissorsButton = document.createElement('button');
+scissorsButton.textContent = 'Scissors';
+const scissorsDiv = document.createElement('div');
+scissorsDiv.appendChild(scissorsButton);
+bodyElement.appendChild(scissorsDiv);
+
 // function getComputerChoice() {
 // Declare an array variable choices = ['Rock', 'Paper', 'Scissors'];
 // randomly generate a decimal (Math.random) and multiply it by the length of the array
@@ -42,25 +63,6 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-const bodyElement = document.body;
-
-const rockButton = document.createElement('button');
-rockButton.textContent = 'Rock';
-const rockDiv = document.createElement('div');
-rockDiv.appendChild(rockButton);
-bodyElement.appendChild(rockDiv);
-
-const paperButton = document.createElement('button');
-paperButton.textContent = 'Paper';
-const paperDiv = document.createElement('div');
-paperDiv.appendChild(paperButton);
-bodyElement.appendChild(paperDiv);
-
-const scissorsButton = document.createElement('button');
-scissorsButton.textContent = 'Scissors';
-const scissorsDiv = document.createElement('div');
-scissorsDiv.appendChild(scissorsButton);
-bodyElement.appendChild(scissorsDiv);
 
 
 /*
